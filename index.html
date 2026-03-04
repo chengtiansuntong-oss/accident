@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>事故・怪我 完璧治療アドバイスシステム</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>事故・怪我 完璧治療アドバイスシステム</h1>
+
+<section class="form-section">
+  <h2>新規事故記録 ＋ 治療アドバイス生成</h2>
+
+  <form id="accidentForm">
+
+    <label>日時（自動）
+      <input type="text" name="datetime" id="datetime" readonly>
+    </label>
+
+    <label>名前
+      <input type="text" name="name" required>
+    </label>
+
+    <label>発生場所
+      <input type="text" name="place" required>
+    </label>
+
+    <label>重大度（自己判断）
+      <select name="level" required>
+        <option value="低">低（軽い怪我）</option>
+        <option value="中">中（応急処置が必要）</option>
+        <option value="高">高（医療機関推奨）</option>
+      </select>
+    </label>
+
+    <label>状況・症状を詳しく入力（例：ひざを強く打って腫れている）
+      <textarea name="detail" id="detailInput" rows="3" required></textarea>
+    </label>
+
+    <button type="submit" class="submit-btn">記録＋治療法決定</button>
+  </form>
+
+  <div id="adviceBox" class="adviceBox">
+    <h3>自動診断された治療法</h3>
+    <p id="adviceText">症状を入力するとここに治療法が表示されます。</p>
+  </div>
+
+  <p id="msg"></p>
+</section>
+
+<section class="list-section">
+  <h2>事故記録一覧</h2>
+
+  <table id="logTable">
+    <thead>
+      <tr>
+        <th>日時</th>
+        <th>名前</th>
+        <th>場所</th>
+        <th>重大度</th>
+        <th>症状</th>
+        <th>治療法</th>
+        <th>削除</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
