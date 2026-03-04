@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.submit-btn {
+  margin-top: 16px;
+  padding: 10px;
+  width: 100%;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.adviceBox {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e5f4ff;
+  border-left: 5px solid #2196f3;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th { background: #eee; }
+
+.delete-btn {
+  background: #d9534f;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+}
