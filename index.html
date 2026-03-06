@@ -2,13 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>事故・怪我 完璧治療アドバイスシステム</title>
+<title>事故・怪我 完璧治療アドバイス＋AED判断システム</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>事故・怪我 完璧治療アドバイスシステム</h1>
+<h1>事故・怪我 完璧治療アドバイス＋AED判断システム</h1>
 
 <section class="form-section">
   <h2>新規事故記録 ＋ 治療アドバイス生成</h2>
@@ -35,16 +35,21 @@
       </select>
     </label>
 
-    <label>状況・症状を詳しく入力（例：ひざを強く打って腫れている）
+    <label>状況・症状を詳しく入力（例：急に倒れた、呼吸がないなど）
       <textarea name="detail" id="detailInput" rows="3" required></textarea>
     </label>
 
-    <button type="submit" class="submit-btn">記録＋治療法決定</button>
+    <button type="submit" class="submit-btn">記録＋治療法判定</button>
   </form>
 
   <div id="adviceBox" class="adviceBox">
     <h3>自動診断された治療法</h3>
-    <p id="adviceText">症状を入力するとここに治療法が表示されます。</p>
+    <p id="adviceText">症状を入力すると治療法が表示されます。</p>
+  </div>
+
+  <div id="aedBox" class="aedBox">
+    <h3>AED 使用判断</h3>
+    <p id="aedText">症状を入力するとAED判断が表示されます。</p>
   </div>
 
   <p id="msg"></p>
@@ -62,6 +67,7 @@
         <th>重大度</th>
         <th>症状</th>
         <th>治療法</th>
+        <th>AED判断</th>
         <th>削除</th>
       </tr>
     </thead>
