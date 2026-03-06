@@ -23,7 +23,9 @@ label {
   font-weight: bold;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
@@ -41,7 +43,8 @@ input, textarea, select {
   border-radius: 5px;
 }
 
-.adviceBox {
+.adviceBox,
+.aedBox {
   margin-top: 20px;
   padding: 15px;
   background: #e5f4ff;
@@ -54,12 +57,15 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
 
-th { background: #eee; }
+th {
+  background: #eee;
+}
 
 .delete-btn {
   background: #d9534f;
